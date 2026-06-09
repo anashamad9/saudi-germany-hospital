@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digizag × SGH Brands API</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0f0f0f; color: #e8e8e8; padding: 40px 24px; }
+    .container { max-width: 760px; margin: 0 auto; }
+    h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 6px; }
+    .subtitle { color: #888; font-size: 0.95rem; margin-bottom: 40px; }
+    .card { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 10px; padding: 24px; margin-bottom: 20px; }
+    h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em; color: #aaa; margin-bottom: 14px; }
+    .endpoint { background: #111; border: 1px solid #333; border-radius: 6px; padding: 12px 16px; font-family: monospace; font-size: 0.9rem; word-break: break-all; }
+    .endpoint a { color: #4fa3ff; text-decoration: none; }
+    .endpoint a:hover { text-decoration: underline; }
+    .badge { display: inline-block; background: #1a3a1a; color: #5adb5a; border: 1px solid #2a5a2a; border-radius: 4px; font-size: 0.75rem; padding: 2px 8px; margin-right: 8px; font-family: monospace; }
+    pre { background: #111; border: 1px solid #2a2a2a; border-radius: 6px; padding: 16px; font-size: 0.82rem; overflow-x: auto; line-height: 1.6; color: #ccc; }
+    .field { display: flex; gap: 12px; margin-bottom: 8px; font-size: 0.9rem; }
+    .field-name { color: #4fa3ff; font-family: monospace; min-width: 160px; }
+    .field-type { color: #f0a060; font-family: monospace; }
+    .field-desc { color: #999; }
+    #last-updated { font-size: 0.82rem; color: #666; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Digizag × SGH Brands API</h1>
+    <p class="subtitle">Live public JSON — auto-synced from Google Sheets every 30 minutes.</p>
+
+    <div class="card">
+      <h2>Endpoint</h2>
+      <div class="endpoint">
+        <span class="badge">GET</span>
+        <a id="api-link" href="api/brands.json">api/brands.json</a>
+      </div>
+      <p id="last-updated">Loading last sync time…</p>
+    </div>
+
+    <div class="card">
+      <h2>Response Fields</h2>
+      <div class="field"><span class="field-name">last_updated</span><span class="field-type">string</span><span class="field-desc">ISO 8601 UTC timestamp of last sync</span></div>
+      <div class="field"><span class="field-name">total</span><span class="field-type">number</span><span class="field-desc">Total number of brands</span></div>
+      <div class="field"><span class="field-name">brands[].brand_name</span><span class="field-type">string</span><span class="field-desc">Brand display name</span></div>
+      <div class="field"><span class="field-name">brands[].targeting_geos</span><span class="field-type">string[]</span><span class="field-desc">Target countries/regions (e.g. ["KSA", "UAE"])</span></div>
+      <div class="field"><span class="field-name">brands[].discount</span><span class="field-type">string</span><span class="field-desc">Discount summary</span></div>
+      <div class="field"><span class="field-name">brands[].discount_content</span><span class="field-type">string</span><span class="field-desc">Full discount content/terms</span></div>
+      <div class="field"><span class="field-name">brands[].website</span><span class="field-type">string</span><span class="field-desc">Brand website URL</span></div>
+      <div class="field"><span class="field-name">brands[].coupon_code</span><span class="field-type">string</span><span class="field-desc">Coupon/promo code</span></div>
+      <div class="field"><span class="field-name">brands[].brand_logo</span><span class="field-type">string</span><span class="field-desc">Brand logo image URL</span></div>
+    </div>
+
+    <div class="card">
+      <h2>Example Response</h2>
+      <pre>{
+  "last_updated": "2026-06-09T10:00:00Z",
+  "source": "Digizag X SGH Brands",
+  "total": 5,
+  "brands": [
+    {
+      "brand_name": "United Pharmacy",
+      "targeting_geos": ["KSA"],
+      "discount": "2 Types:\n- 10% Discount...",
+      "discount_content": "...",
+      "website": "...",
+      "coupon_code": "TEST10",
+      "brand_logo": "https://..."
+    }
+  ]
+}</pre>
+    </div>
+  </div>
+
+  <script>
+    const link = document.getElementById("api-link");
+    const abs = new URL("api/brands.json", location.href).href;
+    link.href = abs;
+    link.textContent = abs;
+
+    fetch("api/brands.json")
+      .then(r => r.json())
+      .then(d => {
+        document.getElementById("last-updated").textContent =
+          "Last synced: " + new Date(d.last_updated).toLocaleString();
+      })
+      .catch(() => {
+        document.getElementById("last-updated").textContent =
+          "Run the sync script or trigger the GitHub Action to generate data.";
+      });
+  </script>
+</body>
+</html>

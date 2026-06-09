@@ -1,0 +1,62 @@
+{
+  "last_updated": "2026-06-09T08:45:57Z",
+  "source": "Digizag X SGH Brands",
+  "total": 5,
+  "brands": [
+    {
+      "brand_name": "United Pharmacy",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "2 Types:\n- 10% Discount codes can be used per user for only one time\n- 5% discount codes without usage cap\n\nNote: The code will not work if the basket just include milk or diapers",
+      "discount_content": "Test",
+      "website": "2 Types:\n- 10% Discount codes can be used per user for only one time\n- 5% discount codes without usage cap\n\nNote: The code will not work if the basket just include milk or diapers",
+      "coupon_code": "Test",
+      "brand_logo": "https://media.go2speed.org/brand/files/digizag/1166/thumbnails_100/%D9%85%D9%88%D9%82%D8%B9%20%D9%86%D9%88%D9%86.png?15643"
+    },
+    {
+      "brand_name": "Dar Alamirat",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "3% with a maximum discount of 250 SAR",
+      "discount_content": "Test",
+      "website": "3% with a maximum discount of 250 SAR",
+      "coupon_code": "Test",
+      "brand_logo": "https://media.go2speed.org/brand/files/digizag/1166/thumbnails_100/%D9%85%D9%88%D9%82%D8%B9%20%D9%86%D9%88%D9%86.png?15643"
+    },
+    {
+      "brand_name": "Al Matar",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "7% discount Hotels\n5% Cashback Flights\nall coupons valid until 31/03/2026 , points valid until End of 2026",
+      "discount_content": "Test",
+      "website": "7% discount Hotels\n5% Cashback Flights\nall coupons valid until 31/03/2026 , points valid until End of 2026",
+      "coupon_code": "Test",
+      "brand_logo": "https://media.go2speed.org/brand/files/digizag/1166/thumbnails_100/%D9%85%D9%88%D9%82%D8%B9%20%D9%86%D9%88%D9%86.png?15643"
+    },
+    {
+      "brand_name": "Noon GCC",
+      "targeting_geos": [
+        "GCC"
+      ],
+      "discount": "KSA & UAE\nNew Users: 10% OFF (Up to 50 AED/SAR)\n Existing Users: 5% OFF (Up to 10 AED/SAR)\n\nFor Toys:\nNew Users: 10% OFF (Capped at 100 SAR/AED).\nReturning Users: 5% OFF (Capped at 50 SAR/AED).\n\n\nKuwait / Oman / Bahrain / Qatar: \nNew: 10% off (up to 50 AED)\nExisting : 10% off (up to 50 AED)",
+      "discount_content": "Test",
+      "website": "KSA & UAE\nNew Users: 10% OFF (Up to 50 AED/SAR)\n Existing Users: 5% OFF (Up to 10 AED/SAR)\n\nFor Toys:\nNew Users: 10% OFF (Capped at 100 SAR/AED).\nReturning Users: 5% OFF (Capped at 50 SAR/AED).\n\n\nKuwait / Oman / Bahrain / Qatar: \nNew: 10% off (up to 50 AED)\nExisting : 10% off (up to 50 AED)",
+      "coupon_code": "Test",
+      "brand_logo": "https://media.go2speed.org/brand/files/digizag/1166/thumbnails_100/%D9%85%D9%88%D9%82%D8%B9%20%D9%86%D9%88%D9%86.png?15643"
+    },
+    {
+      "brand_name": "Namshi",
+      "targeting_geos": [
+        "KSA/UAE"
+      ],
+      "discount": "5% cashback for new & repeat customers\n        Cashback cap: Up to AED/SAR 10\n       No minimum spend required",
+      "discount_content": "Test",
+      "website": "5% cashback for new & repeat customers\n        Cashback cap: Up to AED/SAR 10\n       No minimum spend required",
+      "coupon_code": "Test",
+      "brand_logo": "https://media.go2speed.org/brand/files/digizag/1166/thumbnails_100/%D9%85%D9%88%D9%82%D8%B9%20%D9%86%D9%88%D9%86.png?15643"
+    }
+  ]
+}

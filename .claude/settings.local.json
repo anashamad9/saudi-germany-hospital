@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /Users/digizagoperation/Saudi-Germany-hospital/.github/workflows /Users/digizagoperation/Saudi-Germany-hospital/scripts /Users/digizagoperation/Saudi-Germany-hospital/public/api)",
+      "Bash(python3 scripts/sync_sheet.py)"
+    ],
+    "additionalDirectories": [
+      "/Users/digizagoperation/Saudi-Germany-hospital/.github"
+    ]
+  }
+}
