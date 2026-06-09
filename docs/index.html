@@ -3,56 +3,124 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Digizag × SGH Brands API</title>
+  <title>Digizag x SGH Brands API</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0f0f0f; color: #e8e8e8; padding: 40px 24px; }
-    .container { max-width: 760px; margin: 0 auto; }
-    h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 6px; }
-    .subtitle { color: #888; font-size: 0.95rem; margin-bottom: 40px; }
+    .container { max-width: 820px; margin: 0 auto; }
+
+    /* Header */
+    .header { margin-bottom: 48px; }
+    .header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; }
+    .header p { color: #888; font-size: 0.95rem; line-height: 1.6; max-width: 600px; }
+    .pill { display: inline-block; background: #1a2e1a; color: #5adb5a; border: 1px solid #2a5a2a; border-radius: 20px; font-size: 0.75rem; padding: 3px 10px; margin-left: 10px; vertical-align: middle; font-family: monospace; }
+
+    /* Nav tabs */
+    .tabs { display: flex; gap: 4px; margin-bottom: 28px; border-bottom: 1px solid #222; padding-bottom: 0; }
+    .tab { padding: 8px 18px; font-size: 0.88rem; cursor: pointer; border-radius: 6px 6px 0 0; color: #666; border: 1px solid transparent; border-bottom: none; position: relative; bottom: -1px; }
+    .tab:hover { color: #ccc; }
+    .tab.active { color: #e8e8e8; background: #1a1a1a; border-color: #2a2a2a; border-bottom-color: #1a1a1a; }
+
+    /* Sections */
+    .section { display: none; }
+    .section.active { display: block; }
+
+    /* Cards */
     .card { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 10px; padding: 24px; margin-bottom: 20px; }
-    h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em; color: #aaa; margin-bottom: 14px; }
-    .endpoint { background: #111; border: 1px solid #333; border-radius: 6px; padding: 12px 16px; font-family: monospace; font-size: 0.9rem; word-break: break-all; }
+    .card h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: #666; margin-bottom: 16px; }
+    .card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 10px; color: #ddd; }
+    .card p { color: #999; font-size: 0.9rem; line-height: 1.65; margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+
+    /* Endpoint bar */
+    .endpoint { background: #111; border: 1px solid #333; border-radius: 6px; padding: 13px 16px; font-family: monospace; font-size: 0.88rem; word-break: break-all; display: flex; align-items: center; gap: 10px; }
     .endpoint a { color: #4fa3ff; text-decoration: none; }
     .endpoint a:hover { text-decoration: underline; }
-    .badge { display: inline-block; background: #1a3a1a; color: #5adb5a; border: 1px solid #2a5a2a; border-radius: 4px; font-size: 0.75rem; padding: 2px 8px; margin-right: 8px; font-family: monospace; }
-    pre { background: #111; border: 1px solid #2a2a2a; border-radius: 6px; padding: 16px; font-size: 0.82rem; overflow-x: auto; line-height: 1.6; color: #ccc; }
-    .field { display: flex; gap: 12px; margin-bottom: 8px; font-size: 0.9rem; }
-    .field-name { color: #4fa3ff; font-family: monospace; min-width: 160px; }
+    .badge-get { background: #1a3a1a; color: #5adb5a; border: 1px solid #2a5a2a; border-radius: 4px; font-size: 0.72rem; padding: 2px 8px; font-family: monospace; white-space: nowrap; }
+    .badge-no-auth { background: #1a1a2e; color: #7b9fff; border: 1px solid #2a3a6a; border-radius: 4px; font-size: 0.72rem; padding: 2px 8px; font-family: monospace; white-space: nowrap; }
+    #last-updated { font-size: 0.8rem; color: #555; margin-top: 12px; }
+
+    /* Fields table */
+    .field { display: grid; grid-template-columns: 200px 70px 1fr; gap: 12px; margin-bottom: 10px; font-size: 0.875rem; align-items: start; }
+    .field-name { color: #4fa3ff; font-family: monospace; }
     .field-type { color: #f0a060; font-family: monospace; }
-    .field-desc { color: #999; }
-    #last-updated { font-size: 0.82rem; color: #666; margin-top: 16px; }
+    .field-desc { color: #999; line-height: 1.5; }
+    .field-divider { border: none; border-top: 1px solid #222; margin: 12px 0; }
+
+    /* Code blocks */
+    pre { background: #111; border: 1px solid #2a2a2a; border-radius: 6px; padding: 18px; font-size: 0.82rem; overflow-x: auto; line-height: 1.65; color: #ccc; tab-size: 2; }
+    .lang-label { font-size: 0.72rem; color: #555; font-family: monospace; margin-bottom: 6px; }
+
+    /* Steps */
+    .steps { counter-reset: step; }
+    .step { counter-increment: step; display: flex; gap: 16px; margin-bottom: 24px; }
+    .step-num { width: 28px; height: 28px; border-radius: 50%; background: #222; border: 1px solid #333; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: #aaa; flex-shrink: 0; margin-top: 1px; }
+    .step-body h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; color: #ddd; }
+    .step-body p { color: #888; font-size: 0.875rem; line-height: 1.6; margin-bottom: 10px; }
+
+    /* Info box */
+    .info-box { background: #111e2e; border: 1px solid #1e3a5a; border-radius: 8px; padding: 14px 16px; font-size: 0.875rem; color: #8ab4d4; line-height: 1.6; margin-top: 12px; }
+    .info-box strong { color: #aaccee; }
+
+    /* Inline code */
+    code { background: #222; border: 1px solid #333; border-radius: 4px; padding: 1px 6px; font-family: monospace; font-size: 0.85em; color: #ddd; }
+
+    /* Live brands grid */
+    .brands-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin-top: 4px; }
+    .brand-card { background: #111; border: 1px solid #2a2a2a; border-radius: 8px; padding: 16px; }
+    .brand-card .name { font-weight: 600; font-size: 0.9rem; margin-bottom: 4px; }
+    .brand-card .geo { font-size: 0.75rem; color: #5adb5a; margin-bottom: 8px; font-family: monospace; }
+    .brand-card .discount-text { font-size: 0.8rem; color: #888; line-height: 1.5; white-space: pre-wrap; }
+    .brand-card .coupon { margin-top: 10px; font-family: monospace; font-size: 0.8rem; background: #1a1a1a; border: 1px dashed #333; border-radius: 4px; padding: 4px 8px; color: #f0a060; display: inline-block; }
+    #brands-loading { color: #555; font-size: 0.9rem; padding: 20px 0; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Digizag × SGH Brands API</h1>
-    <p class="subtitle">Live public JSON — auto-synced from Google Sheets every 30 minutes.</p>
+<div class="container">
+
+  <div class="header">
+    <h1>Digizag x SGH Brands API <span class="pill">Live</span></h1>
+    <p>A public JSON feed of all active SGH brand offers, coupon codes, and discount details. The data is pulled automatically from Google Sheets every 30 minutes with no manual steps needed. No authentication required to read.</p>
+  </div>
+
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('overview')">Overview</div>
+    <div class="tab" onclick="switchTab('connect')">How to Connect</div>
+    <div class="tab" onclick="switchTab('reference')">Field Reference</div>
+    <div class="tab" onclick="switchTab('live')">Live Data</div>
+  </div>
+
+  <!-- OVERVIEW -->
+  <div class="section active" id="tab-overview">
 
     <div class="card">
       <h2>Endpoint</h2>
       <div class="endpoint">
-        <span class="badge">GET</span>
+        <span class="badge-get">GET</span>
         <a id="api-link" href="api/brands.json">api/brands.json</a>
+        <span class="badge-no-auth">No Auth</span>
       </div>
-      <p id="last-updated">Loading last sync time…</p>
+      <p id="last-updated">Loading last sync time...</p>
     </div>
 
     <div class="card">
-      <h2>Response Fields</h2>
-      <div class="field"><span class="field-name">last_updated</span><span class="field-type">string</span><span class="field-desc">ISO 8601 UTC timestamp of last sync</span></div>
-      <div class="field"><span class="field-name">total</span><span class="field-type">number</span><span class="field-desc">Total number of brands</span></div>
-      <div class="field"><span class="field-name">brands[].brand_name</span><span class="field-type">string</span><span class="field-desc">Brand display name</span></div>
-      <div class="field"><span class="field-name">brands[].targeting_geos</span><span class="field-type">string[]</span><span class="field-desc">Target countries/regions (e.g. ["KSA", "UAE"])</span></div>
-      <div class="field"><span class="field-name">brands[].discount</span><span class="field-type">string</span><span class="field-desc">Discount summary</span></div>
-      <div class="field"><span class="field-name">brands[].discount_content</span><span class="field-type">string</span><span class="field-desc">Full discount content/terms</span></div>
-      <div class="field"><span class="field-name">brands[].website</span><span class="field-type">string</span><span class="field-desc">Brand website URL</span></div>
-      <div class="field"><span class="field-name">brands[].coupon_code</span><span class="field-type">string</span><span class="field-desc">Coupon/promo code</span></div>
-      <div class="field"><span class="field-name">brands[].brand_logo</span><span class="field-type">string</span><span class="field-desc">Brand logo image URL</span></div>
+      <h2>What this API returns</h2>
+      <p>One JSON file containing every brand in the SGH partnership sheet. Each brand entry includes its name, the geo markets it targets, the discount terms, the active coupon code, and the brand logo URL.</p>
+      <p>The file is regenerated every 30 minutes by a GitHub Actions job that reads the source Google Sheet directly. The <code>last_updated</code> field in the response tells you exactly when the last sync ran.</p>
     </div>
 
     <div class="card">
-      <h2>Example Response</h2>
+      <h2>Quick test</h2>
+      <div class="lang-label">curl</div>
+      <pre id="curl-example">curl https://anashamad9.github.io/saudi-germany-hospital/api/brands.json</pre>
+      <div class="lang-label" style="margin-top:16px">JavaScript (browser or Node)</div>
+      <pre>const res = await fetch("https://anashamad9.github.io/saudi-germany-hospital/api/brands.json");
+const data = await res.json();
+console.log(data.brands);</pre>
+    </div>
+
+    <div class="card">
+      <h2>Example response</h2>
       <pre>{
   "last_updated": "2026-06-09T10:00:00Z",
   "source": "Digizag X SGH Brands",
@@ -61,33 +129,233 @@
     {
       "brand_name": "United Pharmacy",
       "targeting_geos": ["KSA"],
-      "discount": "2 Types:\n- 10% Discount...",
-      "discount_content": "...",
-      "website": "...",
-      "coupon_code": "TEST10",
+      "discount": "2 Types:\n- 10% Discount codes (one-time per user)\n- 5% discount codes (no usage cap)",
+      "discount_content": "Details and terms",
+      "website": "https://unitedpharmacy.com",
+      "coupon_code": "DIGIZAG10",
       "brand_logo": "https://..."
     }
   ]
 }</pre>
     </div>
+
   </div>
 
-  <script>
-    const link = document.getElementById("api-link");
-    const abs = new URL("api/brands.json", location.href).href;
-    link.href = abs;
-    link.textContent = abs;
+  <!-- HOW TO CONNECT -->
+  <div class="section" id="tab-connect">
 
-    fetch("api/brands.json")
+    <div class="card">
+      <h2>Connect from a website (JavaScript)</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h3>Fetch the JSON in your page</h3>
+            <p>Call the endpoint with the browser Fetch API. No API key or header is needed.</p>
+            <pre>fetch("https://anashamad9.github.io/saudi-germany-hospital/api/brands.json")
+  .then(res => res.json())
+  .then(data => {
+    const brands = data.brands;
+    brands.forEach(brand => {
+      console.log(brand.brand_name, brand.coupon_code);
+    });
+  });</pre>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h3>Filter by geo</h3>
+            <p>Use the <code>targeting_geos</code> array to show only brands relevant to the user's region.</p>
+            <pre>const ksaBrands = data.brands.filter(b =>
+  b.targeting_geos.some(g => g.includes("KSA"))
+);</pre>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h3>Render the data</h3>
+            <p>Loop over the filtered brands and build your UI elements from the fields.</p>
+            <pre>ksaBrands.forEach(brand => {
+  const card = document.createElement("div");
+  card.innerHTML = `
+    &lt;img src="${brand.brand_logo}" alt="${brand.brand_name}" /&gt;
+    &lt;h3&gt;${brand.brand_name}&lt;/h3&gt;
+    &lt;p&gt;${brand.discount}&lt;/p&gt;
+    &lt;code&gt;${brand.coupon_code}&lt;/code&gt;
+  `;
+  document.getElementById("brands-container").appendChild(card);
+});</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Connect from a mobile app (React Native)</h2>
+      <pre>import { useEffect, useState } from "react";
+
+export function useBrands() {
+  const [brands, setBrands] = useState([]);
+  useEffect(() => {
+    fetch("https://anashamad9.github.io/saudi-germany-hospital/api/brands.json")
       .then(r => r.json())
-      .then(d => {
-        document.getElementById("last-updated").textContent =
-          "Last synced: " + new Date(d.last_updated).toLocaleString();
-      })
-      .catch(() => {
-        document.getElementById("last-updated").textContent =
-          "Run the sync script or trigger the GitHub Action to generate data.";
+      .then(d => setBrands(d.brands));
+  }, []);
+  return brands;
+}</pre>
+      <div class="info-box">
+        <strong>Tip:</strong> Cache the response locally (AsyncStorage or similar) and only refetch when <code>last_updated</code> is newer than your cached timestamp. This avoids unnecessary network calls on every app launch.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Connect from Python (backend or script)</h2>
+      <pre>import requests
+
+API = "https://anashamad9.github.io/saudi-germany-hospital/api/brands.json"
+
+response = requests.get(API)
+data = response.json()
+
+for brand in data["brands"]:
+    print(f"{brand['brand_name']} | {brand['coupon_code']} | {', '.join(brand['targeting_geos'])}")</pre>
+    </div>
+
+    <div class="card">
+      <h2>Connect from a no-code tool (Zapier / Make / n8n)</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h3>Add an HTTP Request node</h3>
+            <p>In Zapier use the "Webhooks by Zapier" action. In Make use the "HTTP - Make a request" module. In n8n use the "HTTP Request" node.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h3>Configure the request</h3>
+            <p>Method: <code>GET</code></p>
+            <p>URL: <code id="nocode-url">https://anashamad9.github.io/saudi-germany-hospital/api/brands.json</code></p>
+            <p>No headers or authentication needed.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h3>Map the fields</h3>
+            <p>The response body is parsed automatically. Map <code>brands[0].brand_name</code>, <code>brands[0].coupon_code</code>, etc. to downstream steps in your workflow.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>CORS</h2>
+      <p>GitHub Pages serves all files with permissive CORS headers (<code>Access-Control-Allow-Origin: *</code>). You can call this API from any browser, app, or server without proxy workarounds.</p>
+    </div>
+
+  </div>
+
+  <!-- FIELD REFERENCE -->
+  <div class="section" id="tab-reference">
+
+    <div class="card">
+      <h2>Top-level fields</h2>
+      <div class="field"><span class="field-name">last_updated</span><span class="field-type">string</span><span class="field-desc">ISO 8601 UTC datetime of the last successful sync from Google Sheets (e.g. "2026-06-09T10:00:00Z")</span></div>
+      <div class="field"><span class="field-name">source</span><span class="field-type">string</span><span class="field-desc">Identifies the data origin. Always "Digizag X SGH Brands"</span></div>
+      <div class="field"><span class="field-name">total</span><span class="field-type">number</span><span class="field-desc">Total count of brand objects in the brands array</span></div>
+      <div class="field"><span class="field-name">brands</span><span class="field-type">array</span><span class="field-desc">List of brand objects (see below)</span></div>
+    </div>
+
+    <div class="card">
+      <h2>Brand object fields</h2>
+      <div class="field"><span class="field-name">brand_name</span><span class="field-type">string</span><span class="field-desc">Display name of the brand</span></div>
+      <hr class="field-divider" />
+      <div class="field"><span class="field-name">targeting_geos</span><span class="field-type">string[]</span><span class="field-desc">Array of geo markets the brand targets. Common values: "KSA", "UAE", "GCC", "KSA/UAE". A brand can target multiple geos.</span></div>
+      <hr class="field-divider" />
+      <div class="field"><span class="field-name">discount</span><span class="field-type">string</span><span class="field-desc">Short summary of the discount offer. May contain newlines for multi-tier discounts.</span></div>
+      <hr class="field-divider" />
+      <div class="field"><span class="field-name">discount_content</span><span class="field-type">string</span><span class="field-desc">Full discount details and terms as entered in the sheet.</span></div>
+      <hr class="field-divider" />
+      <div class="field"><span class="field-name">website</span><span class="field-type">string</span><span class="field-desc">The brand's website URL.</span></div>
+      <hr class="field-divider" />
+      <div class="field"><span class="field-name">coupon_code</span><span class="field-type">string</span><span class="field-desc">Active promo or coupon code for this brand. Apply at checkout on the brand's website.</span></div>
+      <hr class="field-divider" />
+      <div class="field"><span class="field-name">brand_logo</span><span class="field-type">string</span><span class="field-desc">Full URL to the brand logo image. Suitable for use in an img src attribute directly.</span></div>
+    </div>
+
+    <div class="card">
+      <h2>Notes</h2>
+      <p>Fields will never be missing from a brand object but may be empty strings if the corresponding cell in the sheet was blank.</p>
+      <p>The <code>targeting_geos</code> field is always an array even when a brand targets only one region.</p>
+      <p>Newline characters (<code>\n</code>) in <code>discount</code> and <code>discount_content</code> are intentional and represent line breaks from the original sheet cell.</p>
+    </div>
+
+  </div>
+
+  <!-- LIVE DATA -->
+  <div class="section" id="tab-live">
+    <div class="card">
+      <h2>Live brands</h2>
+      <p style="margin-bottom:16px">Fetched in real time from the API.</p>
+      <div id="brands-loading">Loading...</div>
+      <div class="brands-grid" id="brands-grid"></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const API = new URL("api/brands.json", location.href).href;
+
+  document.getElementById("api-link").href = API;
+  document.getElementById("api-link").textContent = API;
+  document.getElementById("curl-example").textContent = "curl " + API;
+  document.getElementById("nocode-url").textContent = API;
+
+  fetch(API)
+    .then(r => r.json())
+    .then(d => {
+      document.getElementById("last-updated").textContent =
+        "Last synced: " + new Date(d.last_updated).toLocaleString() +
+        "  |  " + d.total + " brands";
+
+      const grid = document.getElementById("brands-grid");
+      const loading = document.getElementById("brands-loading");
+      loading.style.display = "none";
+
+      d.brands.forEach(b => {
+        const el = document.createElement("div");
+        el.className = "brand-card";
+        el.innerHTML =
+          '<div class="name">' + esc(b.brand_name) + '</div>' +
+          '<div class="geo">' + b.targeting_geos.join(", ") + '</div>' +
+          '<div class="discount-text">' + esc(b.discount).slice(0, 120) + (b.discount.length > 120 ? "..." : "") + '</div>' +
+          (b.coupon_code ? '<span class="coupon">' + esc(b.coupon_code) + '</span>' : "");
+        grid.appendChild(el);
       });
-  </script>
+    })
+    .catch(() => {
+      document.getElementById("last-updated").textContent = "Could not load data.";
+      document.getElementById("brands-loading").textContent = "Could not load data.";
+    });
+
+  function esc(s) {
+    return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  }
+
+  function switchTab(name) {
+    document.querySelectorAll(".tab").forEach((t, i) => {
+      const names = ["overview","connect","reference","live"];
+      t.classList.toggle("active", names[i] === name);
+    });
+    document.querySelectorAll(".section").forEach(s => {
+      s.classList.toggle("active", s.id === "tab-" + name);
+    });
+  }
+</script>
 </body>
 </html>
