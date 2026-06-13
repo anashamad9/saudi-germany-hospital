@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-13T17:05:59Z",
+  "last_updated": "2026-06-13T18:22:02Z",
   "source": "Digizag X SGH Brands",
-  "total": 8,
+  "total": 9,
   "brands": [
     {
       "brand_name": "United Pharmacy",
@@ -82,6 +82,17 @@
     },
     {
       "brand_name": "Namshi/test3",
+      "targeting_geos": [
+        "KSA/UAE"
+      ],
+      "discount": "5% cashback for new & repeat customers\n        Cashback cap: Up to AED/SAR 10",
+      "discount_content": "Cashback Up to 10 SAR",
+      "website": "https://www.namshi.com/",
+      "coupon_code": "Tessst",
+      "brand_logo": "https://media.go2speed.org/brand/files/digizag/1166/thumbnails_100/%D9%85%D9%88%D9%82%D8%B9%20%D9%86%D9%88%D9%86.png?15643"
+    },
+    {
+      "brand_name": "Namshi/test444",
       "targeting_geos": [
         "KSA/UAE"
       ],
