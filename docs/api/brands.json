@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-16T08:59:01Z",
+  "last_updated": "2026-07-16T10:56:45Z",
   "source": "Digizag X SGH Brands",
-  "total": 6,
+  "total": 5,
   "brands": [
     {
       "brand_name": "United Pharmacy",
@@ -11,8 +11,8 @@
       "discount": "10% Discount\n\nNote: The code will not work if the basket just include milk or diapers",
       "discount_content": "Discount Up to 10%",
       "website": "https://unitedpharmacy.sa/",
-      "coupon_code": "Test",
-      "brand_logo": "https://media.go2speed.org/brand/files/digizag/1166/thumbnails_100/%D9%85%D9%88%D9%82%D8%B9%20%D9%86%D9%88%D9%86.png?15643"
+      "coupon_code": "N44",
+      "brand_logo": "https://unitedpharmacy.sa/static/version1784026602/frontend/Brainvire/unitedpharmacy-mobile/en_US/images/pharmacist-new-logo.webp"
     },
     {
       "brand_name": "Dar Alamirat",
@@ -22,8 +22,8 @@
       "discount": "3% with a maximum discount of 250 SAR",
       "discount_content": "Discount Up to 250 SAR",
       "website": "https://daralamirat.com.sa/",
-      "coupon_code": "Test",
-      "brand_logo": "https://media.go2speed.org/brand/files/digizag/1166/thumbnails_100/%D9%85%D9%88%D9%82%D8%B9%20%D9%86%D9%88%D9%86.png?15643"
+      "coupon_code": "SD22",
+      "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUY_nWnHgVwDhSYKsv43eJoEhquoWb7eYuxYokrrtMj6wpSzVZHi9waeeF&s=10"
     },
     {
       "brand_name": "Al Matar",
@@ -33,8 +33,8 @@
       "discount": "7% discount Hotels\n5% Cashback Flights",
       "discount_content": "Discount Up to 7%",
       "website": "https://almatar.com/en/",
-      "coupon_code": "Test",
-      "brand_logo": "https://media.go2speed.org/brand/files/digizag/1166/thumbnails_100/%D9%85%D9%88%D9%82%D8%B9%20%D9%86%D9%88%D9%86.png?15643"
+      "coupon_code": "Z12",
+      "brand_logo": "https://d22nihcmq83fqg.cloudfront.net/sites/default/files/styles/icon_image/public/store_icon/almatar-logo-en-arabiccoupon-almatar-coupons-and-promo-codes-400x400.jpg"
     },
     {
       "brand_name": "Noon GCC",
@@ -44,8 +44,8 @@
       "discount": "New Users: 10% OFF (Up to 50 AED/SAR Cashback)\n Existing Users: 5% OFF (Up to 10 AED/SAR Cashback)",
       "discount_content": "Cashback Up to 50 SAR",
       "website": "https://www.noon.com/uae-en",
-      "coupon_code": "Test",
-      "brand_logo": "https://media.go2speed.org/brand/files/digizag/1166/thumbnails_100/%D9%85%D9%88%D9%82%D8%B9%20%D9%86%D9%88%D9%86.png?15643"
+      "coupon_code": "MGY",
+      "brand_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Noon_Website_Logo.svg/960px-Noon_Website_Logo.svg.png"
     },
     {
       "brand_name": "Namshi",
@@ -55,19 +55,8 @@
       "discount": "5% cashback for new & repeat customers\n        Cashback cap: Up to AED/SAR 10",
       "discount_content": "Cashback Up to 10 SAR",
       "website": "https://www.namshi.com/",
-      "coupon_code": "Tessst",
-      "brand_logo": "https://media.go2speed.org/brand/files/digizag/1166/thumbnails_100/%D9%85%D9%88%D9%82%D8%B9%20%D9%86%D9%88%D9%86.png?15643"
-    },
-    {
-      "brand_name": "Namshi/test",
-      "targeting_geos": [
-        "KSA/UAE"
-      ],
-      "discount": "5% cashback for new & repeat customers\n        Cashback cap: Up to AED/SAR 10",
-      "discount_content": "Cashback Up to 10 SAR",
-      "website": "https://www.namshi.com/",
-      "coupon_code": "Tessst",
-      "brand_logo": "https://media.go2speed.org/brand/files/digizag/1166/thumbnails_100/%D9%85%D9%88%D9%82%D8%B9%20%D9%86%D9%88%D9%86.png?15643"
+      "coupon_code": "SGH",
+      "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrb7mV4NU4cD2Y1jFbklbWTfRDEF20c9ri3p7Xw9vtPQ&s=10"
     }
   ]
 }
