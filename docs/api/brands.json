@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-19T08:38:54Z",
+  "last_updated": "2026-07-19T10:11:52Z",
   "source": "Digizag X SGH Brands",
-  "total": 5,
+  "total": 57,
   "brands": [
     {
       "brand_name": "United Pharmacy",
@@ -9,7 +9,7 @@
         "KSA"
       ],
       "discount": "10% Discount\n\nNote: The code will not work if the basket just include milk or diapers",
-      "discount_content": "Discount Up to 10%",
+      "discount_content": "Discount 10%",
       "website": "https://unitedpharmacy.sa/",
       "coupon_code": "N44",
       "brand_logo": "https://unitedpharmacy.sa/static/version1784026602/frontend/Brainvire/unitedpharmacy-mobile/en_US/images/pharmacist-new-logo.webp"
@@ -57,6 +57,578 @@
       "website": "https://www.namshi.com/",
       "coupon_code": "SGH",
       "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrb7mV4NU4cD2Y1jFbklbWTfRDEF20c9ri3p7Xw9vtPQ&s=10"
+    },
+    {
+      "brand_name": "Al Saif Gallery",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "3%",
+      "discount_content": "Discount 3%",
+      "website": "https://alsaifgallery.com/SA_ar",
+      "coupon_code": "",
+      "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShff8mdd5-nS2oWx4Aic-DLoepXyfZprpea4VfZcPk0Q&s=10"
+    },
+    {
+      "brand_name": "MyBaby",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "10% on all products (With a 100 SAR MAX CAP)",
+      "discount_content": "Discount Up To 100 SAR",
+      "website": "https://mybaby.sa/en",
+      "coupon_code": "",
+      "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaAq56MtXsAQEG2GxIWRuHZ2ij0VkN3roszYr6afPIUA&s=10"
+    },
+    {
+      "brand_name": "Al Oyairi Furniture",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "10% on all products with free delivery",
+      "discount_content": "Discount 10% + free delivery",
+      "website": "https://aloyayri.sa/en",
+      "coupon_code": "",
+      "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnLBQjFE5pfvGd96R2eR5y4mWa_FYYy0cT3rSZy4DpqA&s=10"
+    },
+    {
+      "brand_name": "Fitness Time",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "50% (Applied only on 4 months plan on the red Gym)",
+      "discount_content": "Discount Up To 50%\n(Applied only on 4 months plan on the red Gym)",
+      "website": "https://leejam.com.sa/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Daleel Store",
+      "targeting_geos": [
+        "GCC - Focus on KSA and UAE"
+      ],
+      "discount": "5% on all sectors excluding (Telecom & Selected products)",
+      "discount_content": "Discount 5%",
+      "website": "daleelstore.com",
+      "coupon_code": "",
+      "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnMa9BTBGaoUFxr0lgk9gc3BVD58j8zatIy37viITXhQ&s=10"
+    },
+    {
+      "brand_name": "Sweater",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "20% Or 30% Discounts",
+      "discount_content": "Discount Up To 30%",
+      "website": "https://sweater.sa/\nhttps://play.google.com/store/apps/details?id=com.octalsoftaware.sweater&hl=en",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Selene",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "10%",
+      "discount_content": "Discount  10%",
+      "website": "https://selene-official.com/ar",
+      "coupon_code": "",
+      "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyL3gbR1oHOBBCi5YJwVf7G5FPle4XRQwoyEBW0LUF6dljqDGoyuZP1UGp&s=10"
+    },
+    {
+      "brand_name": "Fashion",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "15%",
+      "discount_content": "Discount 15%",
+      "website": "https://fashion.sa/collections/ramadan-collection",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Eseven",
+      "targeting_geos": [
+        "Ksa - Uae - Bhr"
+      ],
+      "discount": "10%",
+      "discount_content": "Discount  10%",
+      "website": "https://eseven-store.com/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Muji",
+      "targeting_geos": [
+        "KSA - KWT - QTR - UAE"
+      ],
+      "discount": "10% off full priced items only",
+      "discount_content": "Discount  10%\nfull priced items only",
+      "website": "https://www.muji.com.sa/en/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "ALHABIB Bedding",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "5%",
+      "discount_content": "Discount 5%",
+      "website": "https://alhabibshop.com/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "SquatWolf-CPS",
+      "targeting_geos": [
+        "WW"
+      ],
+      "discount": "15%",
+      "discount_content": "Discount 15%",
+      "website": "https://squatwolf.com/en-ae",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Ajeer",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "10% \n 100SAR Cap",
+      "discount_content": "Discount Up To 100 SAR",
+      "website": "https://www.iajeer.com/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Al Daham",
+      "targeting_geos": [
+        "GCC"
+      ],
+      "discount": "20% discount on all items (except New Collections).\n \"5% extra discount on all discounted items (except New Collections).\n 5% discount on New Collections.\n \"",
+      "discount_content": "Discount Up To 20%",
+      "website": "https://www.aldaham.com",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "EZ Hire",
+      "targeting_geos": [
+        "UAE - KSA"
+      ],
+      "discount": "1 day booking: 10%\n 1 week booking: 8%\n 1 month booking: 5%\n Capped at 100AED/SAR",
+      "discount_content": "Discount Up To 100 SAR",
+      "website": "https://www.ezhire.sa/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Al Dakheel Oud",
+      "targeting_geos": [
+        "KSA primary / GCC secondary"
+      ],
+      "discount": "5% \n Not applicable on tax and delivery",
+      "discount_content": "Discount 5%",
+      "website": "https://shop.aldakheeloud.com/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "GRASSE PERFUME",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "5 SAR",
+      "discount_content": "Discount 5 SAR",
+      "website": "https://grasse.sa/ar/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Whites",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "5%\n Not including medicine + Mama & Baby.\n No Min Spend",
+      "discount_content": "Discount 5%",
+      "website": "https://www.whites.net/ar/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Osma",
+      "targeting_geos": [
+        "GCC"
+      ],
+      "discount": "10% off (with 10 SAR cap)",
+      "discount_content": "Discount Up To 10 SAR",
+      "website": "https://osmaperfumes.com",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Reef Perfumes",
+      "targeting_geos": [
+        "GCC"
+      ],
+      "discount": "10% with a cap Up to 15SAR",
+      "discount_content": "Discount Up To 15 SAR",
+      "website": "https://reefperfumes.com/ar",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Dr Nutrition",
+      "targeting_geos": [
+        "GCC"
+      ],
+      "discount": "Full Price Items: 5%\n Discounted + Combo Items: 2%\n Top selling categories are proteins, then vitamins and minerals.",
+      "discount_content": "Discount Up To 5%",
+      "website": "drnutrition.com",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Golden Scent",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "10% Site wide, 40 SAR Cap",
+      "discount_content": "Discount Up To 40 SAR",
+      "website": "https://www.goldenscent.com/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "KenzWoman",
+      "targeting_geos": [
+        "KSA - GCC (Secondary)"
+      ],
+      "discount": "20% Min Spend 300SAR",
+      "discount_content": "Discount Up To 300 SAR",
+      "website": "https://kenzwoman.com/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "AloKozay",
+      "targeting_geos": [
+        "UAE - KSA"
+      ],
+      "discount": "New: 20% - 25aed cap\n Old: 10% - 20aed cap",
+      "discount_content": "Discount Up To 25 AED",
+      "website": "https://www.alokozayshop.com/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Dabdoob",
+      "targeting_geos": [
+        "Kuwait, UAE, Bahrain,KSA"
+      ],
+      "discount": "10% discount with a Max SAR 50 on non-discounted items",
+      "discount_content": "Discount Up To 50 SAR",
+      "website": "https://dabdoob.com/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Adidas",
+      "targeting_geos": [
+        "KSA - UAE"
+      ],
+      "discount": "15%",
+      "discount_content": "Discount 15%",
+      "website": "https://www.adidas.sa/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Cartlow",
+      "targeting_geos": [
+        "KSA - UAE"
+      ],
+      "discount": "15% discount up to 30 (AED / SAR) \n Minimum basket value 150 (AED/ SAR) \n code can be used once per user",
+      "discount_content": "Discount Up To 30 SAR\nMinimum basket value 150 SAR",
+      "website": "https://www.cartlow.com/uae/en",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "MetroBrazil",
+      "targeting_geos": [
+        "GCC"
+      ],
+      "discount": "10%",
+      "discount_content": "Discount 10%",
+      "website": "https://metrobrazil.com/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Jeeny Ksa",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "First ride only\n KSA: 40% Max 8 SAR",
+      "discount_content": "Discount Up To 40%\nFirst ride only",
+      "website": "app",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "AirAlo",
+      "targeting_geos": [
+        "MENA"
+      ],
+      "discount": "10%",
+      "discount_content": "Discount 10%",
+      "website": "https://www.airalo.com/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Beluar",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "7%",
+      "discount_content": "Discount 7%",
+      "website": "https://beluar-fr.com/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Waya",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "7%",
+      "discount_content": "Discount 7%",
+      "website": "https://waya.co.com/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Styli",
+      "targeting_geos": [
+        "GCC"
+      ],
+      "discount": "New user: 30% for Non-discounted items & 15% for discounted items.\n Old user: 15% for Non-discounted items & 10% for discounted items.\n \n With a discount cap 50 SAR/AED \n \n Codes Applicable On App Only",
+      "discount_content": "Discount Up To 30%",
+      "website": "https://stylishop.com/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Eyewa",
+      "targeting_geos": [
+        "GCC"
+      ],
+      "discount": "10%",
+      "discount_content": "Discount 10%",
+      "website": "https://eyewa.com/sa-en",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "H&M",
+      "targeting_geos": [
+        "KSA - KWT - UAE"
+      ],
+      "discount": "10% OFF Codes: Valid on full-priced items only.\n 5% OFF Codes: Valid on everything (full-priced and already discounted items).",
+      "discount_content": "Discount Up To 10%",
+      "website": "https://sa.hm.com/en",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "VogaCloset",
+      "targeting_geos": [
+        "MENA"
+      ],
+      "discount": "20% above AED/SAR 100 \n 30% above AED/SAR 700 & SAR/AED 800\n Egypt: 2% - 4%",
+      "discount_content": "Discount Up To 30%",
+      "website": "https://vogacloset.com/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Sun & Sands",
+      "targeting_geos": [
+        "KSA - UAE - KWT"
+      ],
+      "discount": "2 Types:\n - Only work on full priced items\n Discount 20% up to 100 SAR \\AED Minimum cart 600\"\n \n - Discounted items only\n Discount 10% up to 60 AED \\SAR minimum cart 600\"",
+      "discount_content": "Discount 20% up to 100 SAR\nMinimum cart 600\nFull Priced Items Only",
+      "website": "https://en-sa.sssports.com/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Under Armour",
+      "targeting_geos": [
+        "KSA - UAE"
+      ],
+      "discount": "UA UAE & KSA \n Min Cart Value: Aed/Sar 500 \n Discount : FLAT 20% \n Website Discount Capped at : Aed 200 \n Discount applied on Full Priced Products only",
+      "discount_content": "Discount Up To 200 SAR\nMin Cart Value: SAR 500 \nDiscount applied on Full Priced Products only",
+      "website": "https://www.underarmour.ae/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Mamas&Papas",
+      "targeting_geos": [
+        "KSA - KWT-UAE"
+      ],
+      "discount": "UAE/KWT/KSA - Full Price – 15%\n UAE/KWT/KSA - Sale Items – 10%",
+      "discount_content": "Discount Up To 15%",
+      "website": "https://mamasandpapas.ae/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Bath & Body Works",
+      "targeting_geos": [
+        "KSA - KWT"
+      ],
+      "discount": "5% Off Everything",
+      "discount_content": "Discount 5%",
+      "website": "https://www.bathandbodyworks.com.sa/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "NiceOne",
+      "targeting_geos": [
+        "GCC"
+      ],
+      "discount": "Returning Customer: 13 SAR OFF.\n New Customer: 20 SAR OFF",
+      "discount_content": "Discount Up To 20 SAR",
+      "website": "https://niceonesa.com/en",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Mothercare",
+      "targeting_geos": [
+        "KSA - KWT - UAE - BAH - QTR"
+      ],
+      "discount": "5%",
+      "discount_content": "Discount 5%",
+      "website": "Kadi.ae",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Levelshoes",
+      "targeting_geos": [
+        "GCC"
+      ],
+      "discount": "10% rate only applicable on top of items with a star",
+      "discount_content": "Discount 10%",
+      "website": "https://en-saudi.levelshoes.com/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Rasees",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "7% discount",
+      "discount_content": "Discount 7%",
+      "website": "https://rasees.net/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Riva Fashion",
+      "targeting_geos": [
+        "GCC - KSA - KWT - UAE Focus"
+      ],
+      "discount": "10%",
+      "discount_content": "Discount 10%",
+      "website": "https://www.rivafashion.com/en-ae",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Deraah",
+      "targeting_geos": [
+        "GCC - KSA Focus"
+      ],
+      "discount": "10%",
+      "discount_content": "Discount 10%",
+      "website": "www.deraahstore.com/en_sa",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "ToYou",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "New users: 30% off basket value upto 12 sar + 1 month subscription + 30 sar cashback (minimum basket 35 sar)\n Old users: Free Delivery upto 12 SAR with MBC of 69SAR\n \n \n ToMart's codes:\n 10SAR off + Free delivery\n 100 SAR Minimum Basket",
+      "discount_content": "Discount Up To 12 SAR",
+      "website": "app",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Mumzworld",
+      "targeting_geos": [
+        "GCC"
+      ],
+      "discount": "10% with 40 SAR/AED CAP",
+      "discount_content": "Discount Up To 40 SAR",
+      "website": "https://www.mumzworld.com/en",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Footlocker",
+      "targeting_geos": [
+        "KSA - KWT - UAE - BHR - EGY - QTR"
+      ],
+      "discount": "5%",
+      "discount_content": "Discount 5%",
+      "website": "https://www.footlocker.com.sa/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "The Body Shop West KSA & UAE",
+      "targeting_geos": [
+        "KSA & UAE"
+      ],
+      "discount": "10%",
+      "discount_content": "Discount 10%",
+      "website": "https://west.thebodyshop.com.sa/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "New Balance",
+      "targeting_geos": [
+        "GCC - EGY"
+      ],
+      "discount": "10%",
+      "discount_content": "Discount 10%",
+      "website": "https://www.newbalance.co.ae/",
+      "coupon_code": "",
+      "brand_logo": ""
+    },
+    {
+      "brand_name": "Victoria Secret",
+      "targeting_geos": [
+        "KSA - KWT - UAE - QTR"
+      ],
+      "discount": "10%",
+      "discount_content": "Discount 10%",
+      "website": "https://www.victoriassecret.com.sa/",
+      "coupon_code": "",
+      "brand_logo": ""
     }
   ]
 }
