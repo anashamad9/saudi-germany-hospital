@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-12T09:44:39Z",
+  "last_updated": "2026-08-12T10:42:13Z",
   "source": "Digizag X SGH Brands",
-  "total": 57,
+  "total": 58,
   "brands": [
     {
       "brand_name": "Adidas",
@@ -629,6 +629,17 @@
       "website": "https://www.whites.net/ar/",
       "coupon_code": "tt89",
       "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY7CdNmULo2hlzyv1nWLSjjjRWklH5F-4BK54YAXjX1g&s=10"
+    },
+    {
+      "brand_name": "Option B",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "10% discount (Capped 10 SAR + Must be registered user)",
+      "discount_content": "Discount up to 10%",
+      "website": "https://option-b.shop/en/",
+      "coupon_code": "D13",
+      "brand_logo": "https://cdn.salla.sa/cdn-cgi/image/fit=scale-down,width=400,height=400,onerror=redirect,format=auto/mqrGa/Fkei7wQcWpgKHYZXsDxCrqPhJ0ILbCPWmuKI9CHN.png"
     }
   ]
 }
