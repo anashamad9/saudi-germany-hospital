@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-10T09:08:48Z",
+  "last_updated": "2026-09-10T13:32:21Z",
   "source": "Digizag X SGH Brands",
-  "total": 58,
+  "total": 60,
   "brands": [
     {
       "brand_name": "Adidas",
@@ -640,6 +640,28 @@
       "website": "https://option-b.shop/en/",
       "coupon_code": "D13",
       "brand_logo": "https://cdn.salla.sa/cdn-cgi/image/fit=scale-down,width=400,height=400,onerror=redirect,format=auto/mqrGa/Fkei7wQcWpgKHYZXsDxCrqPhJ0ILbCPWmuKI9CHN.png"
+    },
+    {
+      "brand_name": "Voucherek",
+      "targeting_geos": [
+        "KSA"
+      ],
+      "discount": "20% Discount with Max cap of 50 SAR per order",
+      "discount_content": "Discount up to 20%",
+      "website": "https://www.voucherek.com/en/riyadh",
+      "coupon_code": "V17",
+      "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbH5fvRzRV0kuksiz9jGou7gznjI5_FFb4VCwqGqr49A&s"
+    },
+    {
+      "brand_name": "Numero",
+      "targeting_geos": [
+        "WW (focus on GCC)"
+      ],
+      "discount": "15% discount off the platform price",
+      "discount_content": "Discount up to 15%",
+      "website": "https://www.numeroesim.com/",
+      "coupon_code": "V22",
+      "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbxNlyq7ItXtBIGmJg8cd6f_AuoMwvQebbgsjUDRaiLQ&s=10"
     }
   ]
 }
